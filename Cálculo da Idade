@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int ano_nascimento, ano_atual, idade;
+    scanf("%d %d", &ano_nascimento, &ano_atual);
+
+    idade = (ano_atual - ano_nascimento);
+
+    printf("%d\n", idade);
+
+    return 0;
+}
