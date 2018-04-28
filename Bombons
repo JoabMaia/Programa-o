@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int avela, caramelo, passas, preco_avela, preco_caramelo, preco_passas;
+    double resultado;
+    scanf("%d %d %d %d %d %d", &avela, &caramelo, &passas, &preco_avela, &preco_caramelo, &preco_passas);
+
+    resultado = (avela * preco_avela) + (caramelo * preco_caramelo) + (passas * preco_passas);
+    printf("Valor: R$%.2lf", resultado);
+
+    return 0;
+}
