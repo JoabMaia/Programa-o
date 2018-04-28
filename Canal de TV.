@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int canal;
+    scanf("%d", &canal);
+    switch (canal)
+        {
+        	case 2:
+                	printf ("Digite um numero de um canal de tv:\n");
+                	printf("SBT\n");
+        	break;
+        	case 4:
+                	printf ("Digite um numero de um canal de tv:\n");
+                	printf("BAND\n");
+        	break;
+        	case 6:
+                	printf ("Digite um numero de um canal de tv:\n");
+                	printf("REDETV!\n");
+        	break;
+        	case 9:
+                	printf ("Digite um numero de um canal de tv:\n");
+                	printf("RECORD\n");
+        	break;
+        	case 13:
+                	printf ("Digite um numero de um canal de tv:\n");
+                	printf("GLOBO\n");
+        	break;
+        	default:
+                	printf ("Digite um numero de um canal de tv:\n");
+                	printf("Canal Invalido\n");
+        }
+
+    return 0;
+}
