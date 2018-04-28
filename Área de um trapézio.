@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void main(){
+
+    double base_menor, base_maior, altura, area;
+    scanf("%lf %lf %lf", &base_menor, &base_maior, &altura);
+
+    area = ((base_maior + base_menor) * altura)/2;
+
+    printf("%.1lf\n", area);
+
+}
