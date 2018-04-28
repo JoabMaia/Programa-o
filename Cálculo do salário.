@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int quantidade, horas;
+    double resultado;
+    scanf("%d %d", &quantidade, &horas);
+
+    resultado = quantidade * horas;
+
+    printf("Informe quanto ganha por hora:\n""Informe a quantidade mensal de trabalho:\n""Resultado: %.1lf\n", resultado);
+
+    return 0;
+}
