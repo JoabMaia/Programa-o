@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void main(){
+
+    double raio,area;
+    scanf("%lf", &raio);
+
+    area = (3.14159 *((raio/100) * (raio/100)));
+
+    printf("Area = %.4lf\n", area);
+
+}
