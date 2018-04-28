@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int soma=0, i, pontos;
+
+    for(i=0; i<6; i++){
+        scanf("%d", &pontos);
+
+        soma += pontos;
+    }
+    if(soma >= 100){
+        printf("Classificado\n");
+    }
+    else{
+        printf("Eliminado\n");
+    }
+
+    return 0;
+}
