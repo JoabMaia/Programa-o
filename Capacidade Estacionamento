@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int quantidade;
+    double total, total1, resultado;
+    scanf("%d", &quantidade);
+
+    total = 42 * 1.75;
+    total1 = quantidade * 1.75;
+    resultado = total - total1;
+
+    printf("%.2lf", resultado);
+
+    return 0;
+}
