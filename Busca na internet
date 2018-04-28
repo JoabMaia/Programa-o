@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int entrada, calc;
+    scanf("%d", &entrada);
+    calc = (entrada*2)*2;
+    printf("%d\n",calc);
+
+    return 0;
+}
