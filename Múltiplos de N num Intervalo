@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int multiplo, a, b, cont=0;
+    scanf("%d %d %d", &multiplo, &a, &b);
+
+    if(a<=b){
+    while(a<=b){
+    if(a%multiplo == 0)
+        printf("%d\n", a);
+        cont++;
+        a=a+1;
+    }
+    }
+    if(multiplo>b){
+        printf("INEXISTENTE\n");
+    }
+    return 0;
+}
