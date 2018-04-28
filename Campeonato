@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main ( ){
+    int cv, ce, cs, fv, fe, fs , totalc, totalf;
+    scanf("%d %d %d %d %d %d", &cv, &ce, &cs, &fv, &fe, &fs);
+
+    totalc = (cv*3) + ce ;
+    totalf = (fv*3) + fe ;
+
+    if (totalc > totalf ){
+        printf("C\n");
+    }else{
+        if (totalf > totalc ){
+            printf("F\n");
+        }else {
+            if (totalc == totalf ){
+
+                if (cs > fs){
+                    printf("C\n");
+                }else{
+                    if (fs > cs){
+                        printf("F\n");
+                    }else{
+                        printf("=\n");
+                    }
+                }
+            }
+        }
+    }
+
+    return 0 ;
+}
