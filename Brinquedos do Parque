@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int altura, idade, brinquedo = 0;
+    scanf("%d %d", &altura, &idade);
+
+
+    if(altura >= 150 && idade >= 12){
+        brinquedo ++;
+    }
+    if(altura >= 140 && idade >= 14){
+        brinquedo ++;
+    }
+    if(altura >= 170 || idade >= 16){
+        brinquedo ++;
+    }
+    printf("%d\n", brinquedo);
+
+    return 0;
+}
