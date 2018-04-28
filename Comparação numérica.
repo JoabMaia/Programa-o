@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    double numero, numero1;
+
+    scanf("%lf %lf", &numero, &numero1);
+
+    if(numero>numero1){
+        printf("Digite um numero:\n");
+        printf("Digite outro numero:\n");
+        printf("Maior numero: %.1lf", numero);
+    }
+    else if(numero1 > numero){
+        printf("Digite um numero:\n");
+        printf("Digite outro numero:\n");
+        printf("Maior numero: %.1lf", numero1);
+    }
+
+    return 0;
+}
