@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void main(){
+
+    double raio1, raio2, area1, area2;
+    scanf("%lf %lf", &raio1, &raio2);
+
+    area1 = 3.14*(raio1*raio1);
+    area2 = 3.14*(raio2*raio2);
+
+    if(area1>area2){
+        printf("Primeiro circulo\n");
+    }
+    else if(area2>area1){
+        printf("Segundo circulo\n");
+    }
+    else if(area1==area2){
+        printf("Iguais\n");
+    }
+    
+}
