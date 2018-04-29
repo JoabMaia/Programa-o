@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    double rdc, aeg, pi=3.14, c, s;
+
+    scanf("%lf %lf", &rdc, &aeg);
+
+    c = (aeg*pi*rdc)/180;
+    s = (aeg*pi*(rdc*rdc))/360;
+
+    printf("%.2lf\n", c);
+    printf("%.2lf\n", s);
+
+    return 0;
+}
