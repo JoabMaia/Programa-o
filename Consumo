@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+
+    int Km;
+    double l, media;
+
+    scanf("%d %lf", &Km, &l);
+
+    media = Km/l;
+
+    printf("%.3lf km/l\n", media);
+
+    return 0;
+}
