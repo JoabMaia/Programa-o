@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    int i, cont=0;
+    int n = 50;
+    char string[n], carac;
+
+    scanf("%49[^\n]s", string);
+    scanf(" %c", &carac);
+
+    for(i=0; i<n; i++){
+       if(string[i] == carac){
+            cont ++;
+       }
+    }
+    printf("%d", cont);
+   return 0;
+}
