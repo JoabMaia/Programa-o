@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    int valores[4], i;
+
+    for(i=0; i<4; i++){
+        scanf("%d", &valores[i]);
+    }
+    printf("DIFERENCA = %d", (valores[0] * valores[1]) - (valores[2] * valores[3]));
+    return 0;
+}
