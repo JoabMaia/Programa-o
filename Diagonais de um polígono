@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    int lado, diagonal;
+    scanf("%d", &lado);
+
+    diagonal = (lado*(lado-3))/2;
+
+    printf("%d", diagonal);
+
+    return 0;
+}
