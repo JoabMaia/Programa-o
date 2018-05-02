@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    double quantl, quantf, tameq, numb, eficiencia;
+
+    scanf("%lf %lf %lf %lf", &quantl, &quantf, &tameq, &numb);
+
+    eficiencia = ((quantl/quantf)/tameq - (4.2 * numb));
+
+    printf("%.1lf", eficiencia);
+
+    return 0;
+}
