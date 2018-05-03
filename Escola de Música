@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdio.h>
+#include<string.h>
+
+int escola(double media, int faltas){
+
+    if(media>=9.5 && faltas<=10){
+        printf("APROVADO COM LOUVOR\n");
+    }
+    else if(media>=7.0 && media<=9.5 && faltas<=10){
+        printf("APROVADO\n");
+    }
+    else if(media<=7.0 && faltas<=10){
+        printf("REPROVADO\n");
+    }
+    else if(media>=7.0 && faltas>10){
+        printf("REPROVADO POR FALTAS\n");
+    }
+        return 0;
+}
+
+int main(){
+
+    double media;
+    int faltas;
+    scanf("%lf %d", &media, &faltas);
+    
+    escola(media, faltas);
+
+    return 0;
+}
