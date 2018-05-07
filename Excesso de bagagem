@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    double peso;
+    scanf("%lf", &peso);
+
+    if(peso>30){
+        printf("PESO LIMITE EXCEDIDO");
+    }
+    else if(peso>=26){
+        printf("%.2lf", ((peso-20)*32.75));
+    }
+    else if(peso>=21){
+        printf("%.2lf", ((peso-20)*12.50));
+    }
+    else{
+        printf("%.2lf", 0);
+    }
+
+    return 0;
+}
