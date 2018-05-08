@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main()
+{
+    int i,s,m,h,d,a,cs;
+
+    scanf("%d", &i);
+    s=1;
+    m=s*60;
+    h=m*60;
+    d=h*24;
+    a=d*365;
+
+    cs = i*a;
+
+    printf("%d", cs);
+
+    return 0;
+}
