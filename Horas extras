@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    double s_b, valor_h, valor_hex, s_f;
+    int h_ex;
+    scanf("%lf %d", &s_b, &h_ex);
+
+    valor_h = (s_b/44);
+    valor_hex = (valor_h+valor_h/10);
+
+    s_f = h_ex * valor_hex + s_b;
+
+    printf("%.2lf", s_f);
+
+    return 0;
+}
