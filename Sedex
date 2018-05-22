@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    int diametro,*lista;
+    int i;
+
+    scanf("%d", &diametro);
+
+    lista = (int*) malloc(3 * sizeof(int));
+
+    for(i=0; i<3; i++){
+        scanf("%d", &lista[i]);
+    }
+
+    if(diametro<=lista[0] && diametro<=lista[1] && diametro<=lista[2]){
+        printf("S\n");
+    }
+    else{
+        printf("N\n");
+    }
+
+    return 0;
+}
