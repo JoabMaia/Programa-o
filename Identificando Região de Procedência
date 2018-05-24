@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    int c;
+    scanf("%d", &c);
+
+    if(c==1){
+        printf("Nordeste\n");
+    }
+    else if(c==2){
+        printf("Norte\n");
+    }
+    else if(c==3 || c==4){
+        printf("Centro-Oeste\n");
+    }
+    else if(c>=5 && c<=9){
+        printf("Sul\n");
+    }
+    else if(c>=10 && c<=15){
+        printf("Sudeste\n");
+    }
+
+    return 0;
+}
