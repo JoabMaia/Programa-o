@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    int *n, i, tam=10, contador=0;
+    n = (int*) malloc(tam * sizeof(int));
+    for(i=0; i<tam; i++){
+        scanf("%d", &n[i]);
+    }
+    for(i=0; i<tam; i++){
+        if(n[i]==n[9]){
+            contador ++;
+        }
+    }
+
+    printf("O numero %d apareceu %d vezes\n", n[9], contador);
+
+    free(n);
+
+    return 0;
+}
