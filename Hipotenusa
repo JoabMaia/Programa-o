@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+
+int main(){
+
+    double cateto1, cateto2, hipotenusa;
+
+    scanf("%lf %lf", &cateto1, &cateto2);
+
+    hipotenusa = ((cateto1*cateto1) + (cateto2*cateto2));
+
+    printf("%.2lf", sqrt(hipotenusa));
+
+    return 0;
+}
