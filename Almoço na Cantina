@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    double valor, soma_valor=0, resultado_total=0;
+    int i;
+    char comer[20], bebida[20];
+
+    gets(comer);
+    gets(bebida);
+    strupr(comer);
+    strupr(bebida);
+
+    for(i=0; i<1; i++){
+    if(strcmp(comer, "ESTROGONOFE")==0){
+        valor = 11.00;
+        soma_valor += valor;
+    }
+    if(strcmp(comer, "LASANHA")==0){
+        valor = 8.00;
+        soma_valor += valor;
+    }
+    if(strcmp(bebida, "REFRIGERANTE")==0){
+        valor = 3.00;
+        soma_valor += valor;
+    }
+    if(strcmp(bebida, "SUCO")==0){
+        valor = 2.50;
+        soma_valor += valor;
+    }
+    resultado_total += soma_valor;
+    }
+
+    printf("%.2lf", resultado_total);
+
+    return 0;
+}
