@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    char nome[16], sobrenome[16];
+    int tamanho_nome, tamanho_sobrenome, soma_tamanhos;
+
+    gets(nome);
+    tamanho_nome = strlen(nome);
+    gets(sobrenome);
+    tamanho_sobrenome = strlen(sobrenome);
+
+    soma_tamanhos = tamanho_nome + tamanho_sobrenome;
+
+    while(soma_tamanhos>=3 && soma_tamanhos<=16){
+        printf("%s%s",nome,sobrenome);
+        break;
+    }
+    
+    return 0;
+}
