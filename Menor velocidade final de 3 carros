@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    double v[3], vo[3], a[3], t[3], vcon[3], vmenor;
+    int i;
+
+    for(i=0; i<3; i++){
+        scanf("%lf %lf %lf", &vo[i], &a[i], &t[i]);
+    }
+    for(i=0; i<3; i++){
+        v[i] = vo[i]+(a[i] * t[i]);
+        vcon[i] = v[i] * 3.6;
+        vmenor = vcon[0];
+
+        if(vcon[i]<vmenor){
+            vmenor = vcon[i];
+            printf("%.1lf", vmenor);
+
+        }
+    }
+
+    return 0;
+}
