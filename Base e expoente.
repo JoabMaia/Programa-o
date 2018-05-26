@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+
+
+int main(){
+
+    int num, num1, resultado;
+
+    scanf("%d %d", &num, &num1);
+
+    resultado = pow(num, num1);
+
+    printf("Informe a base:\n");
+    printf("Informe o expoente:\n");
+    printf("Resultado: %d\n", resultado);
+    
+    return 0;
+}
