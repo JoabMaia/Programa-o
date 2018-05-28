@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    double portugues1, matematica1, redacao1, aprovado_portugues, aprovado_matematica, aprovado_redacao;
+    int aprovado=0;
+
+    scanf("%lf", &portugues1);
+
+    while(portugues1>0){
+        scanf("%lf", &matematica1);
+        scanf("%lf", &redacao1);
+
+        aprovado_portugues = portugues1;
+        aprovado_matematica = matematica1;
+        aprovado_redacao = redacao1;
+
+        if(aprovado_portugues>=40 && aprovado_matematica>=21 && aprovado_redacao>=7){
+            aprovado += 1;
+        }
+        scanf("%lf", &portugues1);
+    }
+    printf("%d", aprovado);
+
+    return 0;
+}
