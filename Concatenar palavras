@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    char mensagem1[12], mensagem2[12];
+
+    gets(mensagem1);
+    gets(mensagem2);
+
+    printf("%s%s", mensagem1, mensagem2);
+
+    return 0;
+}
