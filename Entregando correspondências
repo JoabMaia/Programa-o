@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main ( )
+{
+    int cartas, soma_cartas=0, dias=0, contador=0, media, i;
+
+    for(i=0; i<7; i++){
+        scanf("%d", &cartas);
+        soma_cartas += cartas;
+        contador += 1;
+        media = soma_cartas/contador;
+
+        if(cartas >= 100){
+            dias += 1;
+        }
+    }
+        printf("%d\n", dias);
+        printf("%d\n", media);
+
+    return 0 ;
+}
