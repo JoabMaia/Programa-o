@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+
+int main ( )
+{
+    int a, n, exponenciacao;
+
+    scanf("%d %d", &a, &n);
+
+    exponenciacao = pow(a, n);
+
+    printf("%d", exponenciacao);
+
+    return 0 ;
+}
