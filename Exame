@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main (){
+    int D, P, U, N, soma;
+
+    scanf("%d %d %d %d", &D, &P, &U, &N);
+
+    soma = D + U + N;
+
+    printf("%d\n", soma);
+
+    return 0 ;
+}
