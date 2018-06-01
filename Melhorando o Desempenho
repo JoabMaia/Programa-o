@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main (){
+
+    float nota1, nota2, nota3, nota4, nota5, nota6;
+    int i;
+
+    scanf("%f %f %f %f %f %f", &nota1, &nota2, &nota3, &nota4, &nota5, &nota6);
+
+
+    if(nota6 > nota5 && nota5 > nota4 && nota4 > nota3 && nota3 > nota2 && nota2 > nota1)
+        printf("Ganha brinquedo\n");
+
+    else
+        printf("Sem brinquedo\n");
+    
+    return 0 ;
+}
