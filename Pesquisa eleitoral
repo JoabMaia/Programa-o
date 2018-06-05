@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    int a, b, c, n, total;
+    double porcentagema, porcentagemb, porcentagemc, porcentagemn;
+
+    scanf("%d %d %d %d", &a, &b, &c, &n);
+
+    total = a+b+c+n;
+
+    porcentagema = (a*100)/total;
+    porcentagemb = (b*100)/total;
+    porcentagemc = (c*100)/total;
+    porcentagemn = (n*100)/total;
+
+    printf("Candidato A: %.0lf%%\n", porcentagema);
+    printf("Candidato B: %.0lf%%\n", porcentagemb);
+    printf("Candidato C: %.0lf%%\n", porcentagemc);
+    printf("Nulos: %.0lf%%\n", porcentagemn);
+
+    return 0;
+}
