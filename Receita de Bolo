@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+int main ( )
+{
+    int a, b, c, TotalA, TotalB, TotalC, aux;
+
+    scanf("%d %d %d", &a, &b, &c);
+
+    TotalA = a / 2;
+    TotalB = b / 3;
+    TotalC = c / 5;
+
+    if(TotalA > TotalB){
+           aux = TotalA;
+           TotalA = TotalB;
+           TotalB = aux;
+           }
+     if(TotalB > TotalC){
+           aux = TotalB;
+           TotalB = TotalC;
+           TotalC = aux;
+           }
+     if(TotalA > TotalB){
+           aux = TotalA;
+           TotalA = TotalB;
+           TotalB = aux;
+     }
+
+    printf("%d\n", TotalA);
+
+    return 0 ;
+}
