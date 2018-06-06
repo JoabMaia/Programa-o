@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+int main(){
+
+   int quantidade, soma=0, num1, num2, espaco, i;
+
+   scanf("%d", &quantidade);
+
+   for(i=0; i<quantidade; i++){
+        scanf("%d %d", &num1, &num2);
+
+        espaco = (num1 * num2);
+
+        soma += espaco;
+   }
+
+    printf("%d\n", soma);
+
+    return 0 ;
+}
