@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+    double resolucao_funcionaria, resolucao_funcionario, valor_total, media;
+    int funcionaria, funcionario, contador=0;
+
+    scanf("%d %d", &funcionaria, &funcionario);
+
+    resolucao_funcionaria = funcionaria * 10;
+    resolucao_funcionario = funcionario * 8.50;
+
+    valor_total = resolucao_funcionaria + resolucao_funcionario;
+    contador = funcionaria + funcionario;
+
+    media = valor_total/contador;
+
+    printf("%.2lf\n", valor_total);
+    printf("%.2lf\n", media);
+
+    return 0;
+}
